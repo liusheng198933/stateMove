@@ -1,0 +1,190 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 33574068
+    name: "MyIngress.ipv4_lpm"
+    alias: "ipv4_lpm"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: TERNARY
+  }
+  action_refs {
+    id: 16799317
+  }
+  action_refs {
+    id: 16805608
+  }
+  action_refs {
+    id: 16800567
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 33614678
+    name: "MyIngress.sync_mode"
+    alias: "sync_mode"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 3
+    name: "hdr.md.mod"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 16810986
+  }
+  action_refs {
+    id: 16781054
+  }
+  action_refs {
+    id: 16800567
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 16800567
+    name: "NoAction"
+    alias: "NoAction"
+  }
+}
+actions {
+  preamble {
+    id: 16805608
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16799317
+    name: "MyIngress.ipv4_forward"
+    alias: "ipv4_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+  params {
+    id: 3
+    name: "rtmp"
+    bitwidth: 16
+  }
+  params {
+    id: 4
+    name: "ttmp"
+    bitwidth: 16
+  }
+  params {
+    id: 5
+    name: "flowid"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 16811450
+    name: "MyIngress._resubmit"
+    alias: "_resubmit"
+  }
+}
+actions {
+  preamble {
+    id: 16803334
+    name: "MyIngress.set_tmp"
+    alias: "set_tmp"
+  }
+}
+actions {
+  preamble {
+    id: 16810986
+    name: "MyIngress.import_state"
+    alias: "import_state"
+  }
+  params {
+    id: 1
+    name: "flowid"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 16781054
+    name: "MyIngress.export_state"
+    alias: "export_state"
+  }
+  params {
+    id: 1
+    name: "flowid"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 16777481
+    name: "MyIngress.set_flow_count"
+    alias: "set_flow_count"
+  }
+}
+registers {
+  preamble {
+    id: 369158674
+    name: "MyIngress.pkt_cnt_reg"
+    alias: "pkt_cnt_reg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369121007
+    name: "MyIngress.last_time_reg"
+    alias: "last_time_reg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 48
+      }
+    }
+  }
+  size: 8
+}
+type_info {
+}

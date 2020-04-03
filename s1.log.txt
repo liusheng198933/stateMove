@@ -1,0 +1,47 @@
+[02:38:36.154] [bmv2] [D] [thread 5366] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[02:38:36.154] [bmv2] [D] [thread 5366] Set default default entry for table 'tbl__resubmit': MyIngress._resubmit - 
+[02:38:36.154] [bmv2] [D] [thread 5366] Set default default entry for table 'tbl_set_tmp': MyIngress.set_tmp - 
+[02:38:54.759] [bmv2] [W] [thread 5407] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[02:38:54.760] [bmv2] [D] [thread 5407] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[02:38:54.760] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl__resubmit': MyIngress._resubmit - 
+[02:38:54.760] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_set_tmp': MyIngress.set_tmp - 
+[02:38:54.763] [bmv2] [D] [thread 5407] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[02:38:54.763] [bmv2] [D] [thread 5407] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : TERNARY   0a000200 &&& ffffff00
+Priority: 2147483646
+Action entry: MyIngress.ipv4_forward - 80000000202,2,2,2,
+
+[02:42:54.143] [bmv2] [W] [thread 5542] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[02:42:54.144] [bmv2] [D] [thread 5542] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[02:42:54.144] [bmv2] [D] [thread 5542] Set default default entry for table 'tbl__resubmit': MyIngress._resubmit - 
+[02:42:54.144] [bmv2] [D] [thread 5542] Set default default entry for table 'tbl_set_tmp': MyIngress.set_tmp - 
+[02:42:54.146] [bmv2] [D] [thread 5542] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[02:42:54.146] [bmv2] [D] [thread 5542] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : TERNARY   0a000200 &&& ffffff00
+Priority: 2147483646
+Action entry: MyIngress.ipv4_forward - 80000000202,2,2,2,
+
+[02:44:31.238] [bmv2] [W] [thread 5623] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[02:44:31.239] [bmv2] [D] [thread 5623] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[02:44:31.239] [bmv2] [D] [thread 5623] Set default default entry for table 'tbl__resubmit': MyIngress._resubmit - 
+[02:44:31.239] [bmv2] [D] [thread 5623] Set default default entry for table 'tbl_set_tmp': MyIngress.set_tmp - 
+[02:44:31.242] [bmv2] [D] [thread 5623] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[02:44:31.242] [bmv2] [D] [thread 5623] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : TERNARY   0a000200 &&& ffffff00
+Priority: 2147483646
+Action entry: MyIngress.ipv4_forward - 80000000202,2,2,2,
+
+[03:23:56.421] [bmv2] [W] [thread 21600] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[03:23:56.422] [bmv2] [D] [thread 21600] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[03:23:56.422] [bmv2] [D] [thread 21600] Set default default entry for table 'tbl__resubmit': MyIngress._resubmit - 
+[03:23:56.422] [bmv2] [D] [thread 21600] Set default default entry for table 'tbl_set_tmp': MyIngress.set_tmp - 
+[03:23:56.426] [bmv2] [D] [thread 21600] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[03:23:56.426] [bmv2] [D] [thread 21600] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : TERNARY   0a000200 &&& ffffff00
+Priority: 2147483646
+Action entry: MyIngress.ipv4_forward - 80000000202,2,2,2,
+
